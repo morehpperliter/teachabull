@@ -204,3 +204,99 @@ input[type=range]{width:100%;accent-color:var(--g);cursor:pointer}
 .risk h3{font-family:'Syne',sans-serif;font-size:15px;font-weight:800;letter-spacing:-0.02em;margin-bottom:.85rem;color:var(--am)}
 .risk p{font-size:12px;color:var(--t2);line-height:1.8;margin-bottom:.6rem}
 .risk p:last-child{margin-bottom:0}
+
+/* ── Layout fixes ── */
+.hi {
+  grid-template-columns: 1fr 380px;
+  gap: 2.5rem;
+  max-width: 1100px;
+}
+
+.hero {
+  padding: 3.5rem 2.5rem 3rem;
+}
+
+.hero h1 {
+  font-size: clamp(2rem, 3.2vw, 3rem);
+}
+
+.hsub {
+  font-size: 14px;
+  max-width: 380px;
+}
+
+.tc {
+  min-width: 0;
+}
+
+.bn {
+  width: 80px;
+}
+
+/* Nav — prevent wrapping on mid-size screens */
+.nav {
+  padding: 0 2rem;
+  gap: 1.5rem;
+}
+
+.tabs .tab {
+  padding: 6px 11px;
+  font-size: 11px;
+}
+
+/* Steps — more air */
+.steps-s {
+  padding: 3.5rem 2.5rem;
+}
+
+.sg {
+  margin-top: 0;
+}
+
+.sc {
+  padding: 1.75rem 1.5rem;
+}
+
+.sc h3 {
+  font-size: 14px;
+}
+
+.sc p {
+  font-size: 13px;
+}
+
+/* KPIs — more gap */
+.hkpis {
+  gap: 2.5rem;
+}
+
+/* Responsive: collapse hero to single column below 860px */
+@media (max-width: 860px) {
+  .hi {
+    grid-template-columns: 1fr;
+  }
+  .tc {
+    max-width: 440px;
+  }
+  .sg {
+    grid-template-columns: 1fr;
+  }
+  .met-row {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .dgrid {
+    grid-template-columns: 1fr;
+  }
+  .pg {
+    grid-template-columns: 1fr;
+  }
+  .cg {
+    grid-template-columns: 1fr;
+  }
+  .dash-p {
+    grid-template-columns: 1fr;
+  }
+  .dsb {
+    display: none;
+  }
+}
